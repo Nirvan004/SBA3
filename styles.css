@@ -14,6 +14,17 @@ body {
     padding: 2rem;
 }
 
+.interface {
+      background-color: hsl(228, 56%, 26%);
+      border-radius: 15px 90px 15px 15px;
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2rem;
+      width: 400px;
+      height: 200px;
+}
 .storage-component {
     background-color: hsl(228, 56%, 26%);
     border-radius: 15px;
