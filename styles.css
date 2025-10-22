@@ -7,13 +7,17 @@ body {
     background-repeat: no-repeat;
     color: white;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 100vh;
     padding: 2rem;
 }
-
+.container {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
 .interface {
       background-color: hsl(228, 56%, 26%);
       border-radius: 15px 90px 15px 15px;
@@ -58,10 +62,36 @@ body {
     font-weight: bold;
     font-size: 0.9rem;
 }
+.icons img {
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
 
+.icons img:hover {
+  transform: scale(1.1);
+}
 @media (max-width: 768px) {
   body {
     background-image: url('images/bg-mobile.png');
     background-size: 100%;
+    flex-direction: column;
+    height: auto;
+  }
+.container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .interface,
+  .storage-component {
+    width: 100%;
+  }
+
+  .interface {
+    border-radius: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
