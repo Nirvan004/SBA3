@@ -1,6 +1,10 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: hsl(229, 57%, 11%);
+    background-image: url("images/bg-desktop.png");
+    background-size: 100% 55vh;
+    background-position: bottom;
+    background-repeat: no-repeat;
     color: white;
     display: flex;
     flex-direction: column;
@@ -42,4 +46,11 @@ body {
     padding: 0.5rem 1rem;
     font-weight: bold;
     font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url('images/bg-mobile.png');
+    background-size: 100%;
+  }
 }
